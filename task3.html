@@ -9,18 +9,27 @@
 	<hr>
 	<form method="post">
 		<p> Имя:
-		<br><input type="text" name="name" >
+		<br><input type="text" name="name" placeholder="Введите ваше имя">
 		</p>
 		<p> Язык програмирования:<br>
-			<input type="radio" name="programmingLanguage" value="C++">C++<br>
-			<input type="radio" name="programmingLanguage" value="PHP">PHP<br>
-			<input type="radio" name="programmingLanguage" value="Python">Python<br>
+			<input id="first1" type="radio" name="programmingLanguage" value="C++">
+				<label for="first1">
+					C++
+				</label><br>
+			<input id="first2" type="radio" name="programmingLanguage" value="PHP">
+				<label for="first2">
+					PHP
+				</label><br>
+			<input id="first3" type="radio" name="programmingLanguage" value="Python">
+				<label for="first3">
+					Python
+				</label><br>
 		</p>
 		<p>Дополнительная информация:<br>
-			<textarea  name="comment" cols="40" rows="3"></textarea><br>
+			<textarea  name="comment" placeholder="Введите информацию" cols="40" rows="3"></textarea><br>
 		</p>
 		<p>Cекретное слово:<br>
-			<input type="password" name="secretWord">
+			<input type="password" name="secretWord" placeholder="Введите секретное слово">
 		</p>
 			<input type="submit" name="submit" value="Отправить">
 		<input type="reset" name="reset" value="Очистить">
